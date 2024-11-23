@@ -12,7 +12,6 @@ from torch.utils.data import DataLoader
 import json
 from transformers import AutoTokenizer, AutoConfig
 from vllm import LLM, SamplingParams
-from llm_models import MyLLM
 from accelerate import Accelerator
 from dataclasses import dataclass, field
 from typing import Optional
@@ -28,6 +27,7 @@ from peft import LoraConfig, get_peft_model
 from tqdm import tqdm
 from transformers import AutoTokenizer
 
+from src.llm_models import MyLLM
 from src.dataset_rag_evaluation import MyDataset
 from src.evaluation import f1_score, exact_match_score, rouge_score, normalize_answer, exact_match_strict_score
 

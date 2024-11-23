@@ -1,6 +1,4 @@
 import torch
-from transformers import BertTokenizer, BertModel
-from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer, DPRContextEncoder, DPRContextEncoderTokenizer
 import torch.nn.functional as F
 import torch.nn as nn
 import collections
